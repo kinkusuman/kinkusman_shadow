@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("")]
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private int numberOfEnemies = 10;
+    [SerializeField] private int numberOfEnemies = 99;
     [SerializeField] private float spawnRangeX = 100f;
     [SerializeField] private float spawnRangeZ = 100f;
     // Start is called before the first frame update
