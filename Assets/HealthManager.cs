@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -20,6 +21,16 @@ public class HealthManager : MonoBehaviour
         {
             shadowHealth += 1;
         }
+
+        if (playerHP < 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+
         Debug.Log($"PlayerHP...{playerHP}/shadowHealth...{shadowHealth}");
     }
     void OnCollisionEnter(Collision collision)
