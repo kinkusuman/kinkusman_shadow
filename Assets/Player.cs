@@ -1,8 +1,10 @@
 
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
+    public TextMeshProUGUI clearText;
     public float speed = 5f;
     public float rotationSpeed = 100f;
     private Rigidbody rb;
@@ -54,6 +56,13 @@ public class Player : MonoBehaviour
         else
         {
             transform.position = new Vector3(transform.position.x, 1, transform.position.z);
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Goal")
+        {
+            clearText.enabled = true;
         }
     }
 }

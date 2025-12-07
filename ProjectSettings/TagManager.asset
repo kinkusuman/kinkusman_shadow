@@ -8,6 +8,7 @@ TagManager:
   - UnderGround
   - Building
   - Enemy
+  - Goal
   layers:
   - Default
   - TransparentFX

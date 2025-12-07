@@ -30,6 +30,22 @@ public class HealthManager : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
 
         Debug.Log($"PlayerHP...{playerHP}/shadowHealth...{shadowHealth}");
     }
