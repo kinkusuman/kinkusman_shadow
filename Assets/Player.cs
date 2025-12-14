@@ -60,9 +60,11 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("^-^2");
         if (collision.gameObject.tag == "Goal")
         {
             clearText.enabled = true;
+            Debug.Log("^-^");
         }
     }
 }
