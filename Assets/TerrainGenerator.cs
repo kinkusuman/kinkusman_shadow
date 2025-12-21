@@ -23,7 +23,7 @@ public class TerrainGenerator : MonoBehaviour
     {
         float spawnPosX = Random.Range(-spawnRangeX / 2, spawnRangeX / 2);
         float spawnPosZ = Random.Range(-spawnRangeZ / 2, spawnRangeZ / 2);
-        Vector3 spawnPosition = new Vector3(spawnPosX, 5, spawnPosZ);
+        Vector3 spawnPosition = new Vector3(spawnPosX, 15, spawnPosZ);
 
         GameObject buildingPrefab = Random.value > 0.5f ? buildingHorPrefab : buildingVerPrefab;
         Instantiate(buildingPrefab, spawnPosition, Quaternion.identity);

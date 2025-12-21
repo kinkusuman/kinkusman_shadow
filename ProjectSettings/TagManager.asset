@@ -9,6 +9,7 @@ TagManager:
   - Building
   - Enemy
   - Goal
+  - HealingItem
   layers:
   - Default
   - TransparentFX
