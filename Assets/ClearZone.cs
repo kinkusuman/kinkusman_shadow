@@ -18,7 +18,10 @@ public class ClearZone : MonoBehaviour
         
     }
     private void OnTriggerEnter (Collider other)
+    {
+        if (other.gameObject.tag == "Player")
         {
-        clearText.enabled = true;
+            clearText.enabled = true;
         }
+    }
 }

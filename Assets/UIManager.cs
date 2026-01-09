@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerHPText.text = $"Player HP: {healthManager.playerHP}";
+        playerHPText.text = $"Player HP: {HealthManager.playerHP}";
         shadowHealthText.text = $"Shadow Health: {healthManager.shadowHealth}";
     }
 }

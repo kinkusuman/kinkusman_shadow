@@ -10,6 +10,10 @@ TagManager:
   - Enemy
   - Goal
   - HealingItem
+  - FxTemporaire
+  - Obstacle
+  - Obstcales
+  - T
   layers:
   - Default
   - TransparentFX

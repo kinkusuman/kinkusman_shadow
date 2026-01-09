@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    public int playerHP = 100;
+    public static int playerHP = 100;
     public int shadowHealth = 10;
     private bool isUnderground = false;
     // Start is called before the first frame update
@@ -46,7 +46,11 @@ public class HealthManager : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
-
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+       
         Debug.Log($"PlayerHP...{playerHP}/shadowHealth...{shadowHealth}");
     }
     void OnCollisionEnter(Collision collision)
@@ -58,6 +62,10 @@ public class HealthManager : MonoBehaviour
         else if (collision.gameObject.CompareTag("UnderGround"))
         {
             isUnderground = true;
+        }
+        if (collision.gameObject.tag == "T")
+        {
+            playerHP -= 20;
         }
     }
     void OnCollisionExit(Collision collision)

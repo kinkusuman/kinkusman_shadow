@@ -5,11 +5,14 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     private int HealingItemCount = 0;
-    private int PlayerHP = 0;
+    AudioSource audioSource;
+    public AudioClip SE1;
+
     // Start is called before the first frame update
     void Start()
     {
-        PlayerHP = 100;
+    audioSource = GetComponent<AudioSource>();
+    
     }
 
     // Update is called once per frame
@@ -17,16 +20,18 @@ public class Item : MonoBehaviour
     {
         print(HealingItemCount);
 
-        if(Input.GetMouseButtonDown(1) && HealingItemCount >= 1)
+        if(Input.GetKeyDown(KeyCode.B)&& HealingItemCount >= 1)//Input.GetMouseButtonDown(1) 
         {
             HealingItemCount -= 1;
-            PlayerHP += 6;
+
+            HealthManager.playerHP += 20;
         }
     }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "HealingItem")
         {
+            audioSource.PlayOneShot(SE1);
             Destroy(other.gameObject);
             HealingItemCount += 1;
         }
