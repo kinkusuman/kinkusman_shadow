@@ -19,6 +19,6 @@ public class L : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Stage1");
     }
 }

@@ -19,6 +19,6 @@ public class ButtonScript : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Stage1");
     }
 }
