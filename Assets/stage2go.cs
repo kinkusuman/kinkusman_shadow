@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class stage2go : MonoBehaviour
 {
@@ -13,14 +14,16 @@ public class stage2go : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+    
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Trap")
+        Debug.Log("AAAA");
+        if (other.CompareTag("Trap"))
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Stage2");
+            SceneManager.LoadScene("Stage2");
         }
     }
+    
 }

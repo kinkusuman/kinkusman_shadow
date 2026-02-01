@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,8 @@ public class ButtonScript : MonoBehaviour
     public void OnClick()
     {
         SceneManager.LoadScene("Stage1");
+        HealthManager.playerHP = 100;
+
+
     }
 }

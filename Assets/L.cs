@@ -20,5 +20,7 @@ public class L : MonoBehaviour
     public void OnClick()
     {
         SceneManager.LoadScene("Stage1");
+        HealthManager.playerHP = 100;
+
     }
 }

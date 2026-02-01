@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameOver.unity
     guid: 770363f68e94c40358070a336afc4eb4
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: d6f9cc524e1684cd69f582626ca1e4a0
+  - enabled: 1
+    path: Assets/BTM_Assets/BTM_Items_Gems/Scenes/Gems Sample Scene.unity
+    guid: d4cfd39932f58a34d860f558a0834e1d
+  - enabled: 1
+    path: Assets/Obstacle Pack/Scenes/Demo Scene.unity
+    guid: 1eae927eb1eb841058ac2ae0ccc7d90d
   m_configObjects: {}

@@ -15,6 +15,7 @@ TagManager:
   - Obstcales
   - T
   - Trap
+  - M
   layers:
   - Default
   - TransparentFX

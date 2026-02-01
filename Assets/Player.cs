@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -66,5 +67,18 @@ public class Player : MonoBehaviour
             clearText.enabled = true;
             Debug.Log("^-^");
         }
-    }
-}
+         if (collision.gameObject.tag == "M")
+          {
+             Debug.Log("111111");
+              SceneManager.LoadScene("Stage2");
+          }
+    
+     }
+
+}    
+    
+
+    
+            
+
+
